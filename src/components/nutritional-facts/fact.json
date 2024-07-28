@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_nutritional_facts_facts",
+  "info": {
+    "displayName": "Fact",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Fact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "nutritional-facts.fact-item"
+    },
+    "percent": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subcategories",
+  "info": {
+    "singularName": "subcategory",
+    "pluralName": "subcategories",
+    "displayName": "Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-properties.seo"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "coffees": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coffee.coffee"
+    }
+  }
+}

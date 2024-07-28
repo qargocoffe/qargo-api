@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_homepage_banner_homepages",
+  "info": {
+    "displayName": "Banner-Homepage"
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

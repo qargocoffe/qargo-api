@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_menu_items_menus",
+  "info": {
+    "displayName": "Menu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "Items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-items.items"
+    }
+  }
+}

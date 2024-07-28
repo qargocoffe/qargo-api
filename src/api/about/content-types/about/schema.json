@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "Background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Mission": {
+      "type": "text",
+      "required": true
+    },
+    "Vision": {
+      "type": "string",
+      "required": true
+    },
+    "Sustainability": {
+      "type": "text",
+      "required": true
+    },
+    "Title_Meet_QargoCoffe": {
+      "type": "string",
+      "required": true
+    },
+    "Meet_Description_QargoCoffee": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

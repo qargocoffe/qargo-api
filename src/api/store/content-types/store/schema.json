@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stores",
+  "info": {
+    "singularName": "store",
+    "pluralName": "stores",
+    "displayName": "Store",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "direction": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string",
+      "required": true
+    },
+    "lng": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "isOpen": {
+      "type": "boolean",
+      "default": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
