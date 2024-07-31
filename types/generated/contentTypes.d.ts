@@ -901,13 +901,13 @@ export interface ApiCoffeeCoffee extends Schema.CollectionType {
     information: Attribute.RichText;
     Thumbnail: Attribute.Media<'images'>;
     slug: Attribute.UID<'api::coffee.coffee', 'title'>;
-    Fact: Attribute.Component<'nutritional-facts.fact', true>;
     allergens: Attribute.Relation<
       'api::coffee.coffee',
       'oneToMany',
       'api::allergen.allergen'
     >;
     description: Attribute.Text;
+    nutritional: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1135,7 +1135,7 @@ export interface ApiWorkerWorker extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     position: Attribute.Text & Attribute.Required;
-    photo: Attribute.Media<'images', true>;
+    thumbnail: Attribute.Media<'images'> & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -32,11 +32,6 @@
       "targetField": "title",
       "required": false
     },
-    "Fact": {
-      "type": "component",
-      "repeatable": true,
-      "component": "nutritional-facts.fact"
-    },
     "allergens": {
       "type": "relation",
       "relation": "oneToMany",
@@ -44,6 +39,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "nutritional": {
+      "type": "richtext"
     }
   }
 }

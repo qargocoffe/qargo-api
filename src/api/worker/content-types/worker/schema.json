@@ -20,13 +20,13 @@
       "type": "text",
       "required": true
     },
-    "photo": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
+    "thumbnail": {
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

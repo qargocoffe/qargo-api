@@ -36,30 +36,6 @@ export interface MenuItemsMenu extends Schema.Component {
   };
 }
 
-export interface NutritionalFactsFactItem extends Schema.Component {
-  collectionName: 'components_nutritional_facts_fact_items';
-  info: {
-    displayName: 'Fact-item';
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required;
-    percent: Attribute.Integer;
-  };
-}
-
-export interface NutritionalFactsFact extends Schema.Component {
-  collectionName: 'components_nutritional_facts_facts';
-  info: {
-    displayName: 'Fact';
-    description: '';
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required;
-    Fact: Attribute.Component<'nutritional-facts.fact-item', true>;
-    percent: Attribute.Integer;
-  };
-}
-
 export interface PagePropertiesMetaTag extends Schema.Component {
   collectionName: 'components_page_properties_meta_tags';
   info: {
@@ -92,8 +68,6 @@ declare module '@strapi/types' {
       'homepage.banner-homepage': HomepageBannerHomepage;
       'menu-items.items': MenuItemsItems;
       'menu-items.menu': MenuItemsMenu;
-      'nutritional-facts.fact-item': NutritionalFactsFactItem;
-      'nutritional-facts.fact': NutritionalFactsFact;
       'page-properties.meta-tag': PagePropertiesMetaTag;
       'page-properties.seo': PagePropertiesSeo;
     }
