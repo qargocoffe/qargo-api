@@ -42,6 +42,10 @@
     },
     "nutritional": {
       "type": "richtext"
+    },
+    "vlookup": {
+      "type": "string",
+      "required": true
     }
   }
 }

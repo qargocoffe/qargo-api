@@ -21,7 +21,7 @@ module.exports = {
   async bootstrap() {
     try {
       // Import products from CSV on Strapi start
-     // await importProductsFromCSV();
+      await importProductsFromCSV();
       console.log('CSV import triggered on Strapi startup.');
     } catch (error) {
       console.error('Error triggering CSV import:', error);

@@ -908,6 +908,7 @@ export interface ApiCoffeeCoffee extends Schema.CollectionType {
     >;
     description: Attribute.Text;
     nutritional: Attribute.RichText;
+    vlookup: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

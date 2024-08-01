@@ -56,9 +56,8 @@ module.exports = {
         let coffee = await strapi.entityService.create('api::coffee.coffee', {
           data: {
             title: record.Product,
-            nutritionalFacts: record['Nutritional'],
             description: record['Description'],
-            nameForVlookup: record['Vlookup'],
+            vlookup: record['Vlookup'],
             subcategory: category.id,  // Establish relationship with subcategory
           }
         });
